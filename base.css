@@ -1,0 +1,12 @@
+body {
+    font-family: 'Inter', sans-serif; 
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+:root {
+    --ciano: #b6fcd5;
+    --azul-claro: #c0d6e4;
+}
+

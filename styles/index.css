@@ -1,0 +1,61 @@
+.apresentacao {
+    background: url("../img/bg-anderson.png");
+
+    height: 100vh;
+}
+
+.apresentacao__descricao {
+    display: flex;
+    flex-direction: column;
+
+    width: 80vw;
+
+    padding: 25vh 10vw; 
+}
+
+.apresentacao__titulo {
+    color: var(--ciano);
+    font-weight: 700;
+    font-size: 46px;
+}
+
+.apresentacao__subtitulo {
+    color: var(--azul-claro);
+    font-size: 24px;
+    font-weight: 700;
+
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+}
+
+.apresentacao__texto {
+    color: white;
+    font-size: 18px;
+}
+
+.apresentacao__botao {
+    text-decoration: none;
+    color: var(--ciano);
+    font-size: 14px;
+    font-weight: 700;
+
+    text-align: center;
+
+    border: 1px var(--ciano) solid;
+    border-radius: 5px;
+
+    display: block;
+    box-sizing: border-box;
+
+    padding: 1em 2em;
+
+    margin-top: 3rem;
+
+    width: 50%;
+}
+
+.apresentacao__botao:active {
+    background-color: var(--ciano);
+
+    color: black;
+}
