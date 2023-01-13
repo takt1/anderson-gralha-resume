@@ -1,7 +1,5 @@
-.apresentacao {
-    background: url("../img/bg-anderson.png");
-
-    height: 100vh;
+body {
+    background: url("../img/bg-anderson\ 2.png") no-repeat;
 }
 
 .apresentacao__descricao {
@@ -10,13 +8,15 @@
 
     width: 80vw;
 
-    padding: 25vh 10vw; 
+    padding: 50vh 10vw 0 10vw; 
 }
 
 .apresentacao__titulo {
-    color: var(--ciano);
+    color: white;
     font-weight: 700;
     font-size: 46px;
+
+    font-family: var(--montserrat);
 }
 
 .apresentacao__subtitulo {
@@ -28,34 +28,13 @@
     margin-bottom: 2rem;
 }
 
-.apresentacao__texto {
-    color: white;
-    font-size: 18px;
-}
+@media  screen and (min-width: 728px) {
+    .apresentacao__descricao {
+        align-items: flex-end;
+        padding: 40vh 10vw 0 10vw;
+    }
 
-.apresentacao__botao {
-    text-decoration: none;
-    color: var(--ciano);
-    font-size: 14px;
-    font-weight: 700;
-
-    text-align: center;
-
-    border: 1px var(--ciano) solid;
-    border-radius: 5px;
-
-    display: block;
-    box-sizing: border-box;
-
-    padding: 1em 2em;
-
-    margin-top: 3rem;
-
-    width: 50%;
-}
-
-.apresentacao__botao:active {
-    background-color: var(--ciano);
-
-    color: black;
+    .apresentacao__titulo {
+        font-size: 32px;
+    }
 }

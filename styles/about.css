@@ -1,0 +1,129 @@
+body {
+    background-color: var(--azul-escuro);
+}
+
+.sobre-mim {
+    padding: 5em 0;
+}
+
+.sobre-mim__titulo {
+    font-family: var(--montserrat);
+    color: var(--ciano);
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+
+    margin-bottom: 2rem;
+}
+
+.sobre-mim__descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-mim__texto {
+    color: white; 
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: justify ;
+
+    margin: 0 2rem 2em;
+}
+
+.sobre-mim__card-imagem {
+    width: 100vw;
+    max-width: 600px;
+
+    display: block;
+
+   margin: 0 auto;
+}
+
+.sobre-mim__card-texto {
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 30px;
+
+    margin: 1rem 3rem;
+}
+
+.sobre-mim__texto--invisivel {
+    display: none;
+}
+
+@media screen and (min-width: 728px) {
+    .sobre-mim__descricao {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-mim__texto {
+        font-size: 20px;
+
+        width: 70vw;
+    }
+
+    .sobre-mim__card {
+        margin: 0 2em;
+    }
+
+    .sobre-mim__card-imagem {
+        background-color: var(--azul-claro);
+
+        border-radius: 15px;
+        
+        padding: 2em;
+    }
+
+    .sobre-mim__card-texto {
+        display: none;
+    }
+
+    .sobre-mim__texto--invisivel {
+        display: block;
+
+        color: white; 
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: justify;
+
+        width: 70vw;
+
+        margin: 2rem 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sobre-mim__descricao {
+        margin: 0 9em;
+    }
+
+    .sobre-mim__titulo {
+        font-size: 50px;
+    }
+
+    .sobre-mim__texto {
+        font-size: 24px;
+    }
+
+    .sobre-mim__texto--invisivel {
+        font-size: 24px;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+    .sobre-mim__texto {
+        width: 50vw;
+    }
+
+    .sobre-mim__texto--invisivel {
+        width: 50vw;
+    }
+}
