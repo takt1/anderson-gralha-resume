@@ -1,0 +1,51 @@
+.contato {
+    display: flex;
+    overflow: hidden; 
+}
+
+.contato__video {
+    position: fixed;
+
+    z-index: -3;
+
+    height: 100vh;
+
+    top: 0;
+    right: 0;;
+}
+
+.contato__lista-ancora {
+    z-index: 3;
+
+    margin: 7em auto;
+}
+
+.contato__ancora {
+    display: flex;
+    align-items: center;
+
+    margin: 2em 0;
+}
+
+.contato__ancora-texto {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: black;
+    font-size: 24px;
+
+    margin-left: 1rem;
+}
+
+.contato__ancora-logo {
+    width: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+    .contato__ancora-logo {
+        width: 50px;
+    }
+
+    .contato__ancora-texto {
+        font-size: 32px;
+    }
+}
