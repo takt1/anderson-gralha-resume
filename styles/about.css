@@ -55,6 +55,29 @@ body {
     display: none;
 }
 
+.sobre-mim__botao {
+    border: var(--ciano) 2px solid;
+    border-radius: 10px;
+
+    padding: 1em 2em;
+
+    color: var(--ciano);
+    text-decoration: none;
+    font-size: 14px;
+
+    margin-top: 3em;
+}
+
+.sobre-mim__botao:hover {
+    background-color: var(--ciano);
+
+    color: black;
+}
+
+.sobre-mim__botao:active {
+    background-color: var(--azul-claro);
+}
+
 @media screen and (min-width: 728px) {
     .sobre-mim__descricao {
         justify-content: center;
@@ -95,6 +118,10 @@ body {
         width: 70vw;
 
         margin: 2rem 3rem;
+    }
+
+    .sobre-mim__botao {
+        font-size: 24px;
     }
 }
 

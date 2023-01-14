@@ -1,5 +1,6 @@
 body {
     background: url("../img/bg-anderson\ 2.png") no-repeat;
+    background-color: var(--cinza-escuro);
 }
 
 .apresentacao__descricao {
