@@ -11,6 +11,15 @@ body {
     overflow: hidden;
 }
 
+.workst__video {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    z-index: -4;
+}
+
 .workst__titulo {
     color: var(--ciano);
     font-weight: 700;
