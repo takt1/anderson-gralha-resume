@@ -1,0 +1,114 @@
+body {
+    background-color: var(--azul-escuro);
+}
+
+.workst {
+    margin: 4em 2em;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.workst__titulo {
+    color: var(--ciano);
+    font-weight: 700;
+    font-family: var(--montserrat);
+    font-size: 36px;
+    text-align: center;
+
+    margin-bottom: 2rem;
+}
+
+.workst__card {
+    background-color: #E5E8E8;
+
+    padding: 2em 2.5em;
+
+    margin: 2rem auto;
+
+    border-radius: 15px;
+}
+
+.card__titulo {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.card__data {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+
+    font-size: 12px;
+    font-weight: 550;
+}
+
+.card__texto {
+    line-height: 24px;
+    text-align: justify;
+}
+
+.workst__botao {
+    border: var(--ciano) 2px solid;
+    border-radius: 10px;
+
+    padding: 1em 2em;
+
+    color: var(--ciano);
+    text-decoration: none;
+    font-size: 14px;
+
+    margin-top: 4em;
+
+    text-align: center;
+}
+
+.workst__botao:hover {
+    background-color: var(--ciano);
+
+    color: black;
+}
+
+.workst__botao:active {
+    background-color: var(--azul-claro);
+}
+
+@media screen and (min-width:728px) {
+    
+    .workst__card {
+        width: 70vw;
+    }
+
+    .card__titulo {
+        font-size: 20px;
+    }
+
+    .card__data {
+        font-size: 15px;
+    }
+
+    .card__texto {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .workst__botao {
+        width: 40%;
+
+        font-size: 18px;
+
+        margin: 4em auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .workst__card {
+        width: 60vw;
+    }
+
+    .workst__botao {
+        width: 30%;
+    }
+}
