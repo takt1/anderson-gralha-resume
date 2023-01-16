@@ -1,3 +1,7 @@
+body {
+    background-color: black;
+}
+
 .contato {
     display: flex;
     overflow: hidden; 
@@ -11,7 +15,8 @@
     height: 100vh;
 
     top: 0;
-    right: 0;;
+    left: 0;
+    right: 0;
 }
 
 .contato__lista-ancora {
