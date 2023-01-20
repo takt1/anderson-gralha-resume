@@ -16,8 +16,17 @@ body {
     color: white;
     font-weight: 700;
     font-size: 46px;
-
+    text-decoration: none;
     font-family: var(--montserrat);
+}
+
+.apresentacao__titulo:hover {
+    color: var(--ciano);
+    text-decoration: underline;
+}
+
+.apresentacao__titulo:active {
+    color: var(--azul-claro);
 }
 
 .apresentacao__subtitulo {
