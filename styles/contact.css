@@ -43,7 +43,7 @@ body {
     font-weight: 700;
     text-align: center;
     
-    margin: 2em 0;
+    margin: 7em 0 2em 0;
 }
 
 .contato__form-nome {
@@ -102,6 +102,8 @@ body {
 
     border-radius: 5px;
     border: none;
+
+    cursor: pointer;
 }
 
 .contato__form-botao:hover {
