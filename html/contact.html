@@ -32,7 +32,7 @@
                     <a href="about.html" class="cabecalho__lista-link">About me</a>
                 </li>
                 <li class="cabecalho__lista-item">
-                    <a href="workstory.html" class="cabecalho__lista-link">Work story</a>
+                    <a href="workstory.html" class="cabecalho__lista-link">Work History</a>
                 </li>
                 <li class="cabecalho__lista-item">
                     <a href="contact.html" class="cabecalho__lista-link">Contact</a>
@@ -47,25 +47,22 @@
             <video autoplay loop muted class="contato__video">
                 <source src="../movie/bg-anderson-contato.mp4" type="video/mp4">
             </video>
-            <h1 class="contato__titulo"></h1>  
-            <ul class="contato__lista-ancora">         
-                <a href="https://www.linkedin.com/in/andersongralha/" class="contato__ancora">
-                    <img src="../img/linkedin.svg" alt="LinkedIn's logo" class="contato__ancora-logo">
-                    <p class="contato__ancora-texto">LinkedIn</p>
-                </a>
-                <a href="https://instagram.com/andersonrsg?igshid=OGQ2MjdiOTE=" class="contato__ancora">
-                    <img src="../img/instagram.svg" alt="Instagram's logo" class="contato__ancora-logo">
-                    <p class="contato__ancora-texto">Instagram</p>
-                </a>
-                <a href="mailto:anderson.gralha@gmail.com" class="contato__ancora">
-                    <img src="../img/email.svg" alt="Email's logo" class="contato__ancora-logo">
-                    <p class="contato__ancora-texto">Email</p>
-                </a>
-                <a href="https://api.whatsapp.com/send?phone=5551985666714&text=Hello,%20I've%20seen%20your%20website%20and%20I%20would%20like%20to%20talk%20with%20you." class="contato__ancora">
-                    <img src="../img/whatsapp.svg" alt="WhatsApp's logo" class="contato__ancora-logo">
-                    <p class="contato__ancora-texto">WhatsApp</p>
-                </a>
-            </ul> 
+            <h1 class="contato__titulo">Contact me</h1> 
+            <span>Send me a Email</span>
+            <form action="https://formsubmit.co/anderson.gralha@gmail.com" method="POST" class="contato__form">
+                <label class="contato__form-nome" for="name">Name</label>
+                <input class="contato__form-informacao" type="text" name="name" required placeholder="Write your name here">
+                <label class="contato__form-nome" for="email">Email</label>
+                <input class="contato__form-informacao" type="email" name="email" required placeholder="Write your email here">
+                <label class="contato__form-nome" for="message">Message</label>
+                <textarea class="contato__form-mensagem contato__form-informacao" name="message" placeholder="Write your message here" required></textarea>
+                <button type="submit" class="contato__form-botao">Send</button>
+           </form> 
+           <span>Or check my:</span>
+            <a href="https://www.linkedin.com/in/andersongralha/" class="contato__ancora">
+                <img src="../img/linkedin.svg" alt="LinkedIn's logo" class="contato__ancora-logo">
+                <p class="contato__ancora-texto">LinkedIn</p>
+            </a>
         </section>
 
     </main>

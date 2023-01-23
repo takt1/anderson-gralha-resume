@@ -13,11 +13,12 @@ body {
     --cinza: #A6ACAF;
 
     --montserrat: 'Montserrat', sans-serif;
+    --inter: 'Inter', sans-serif;
 }
 
 
 .cabecalho {
-    height: 20vh;
+    padding: 3rem 0;
 
     border-bottom: 4px var(--azul-claro) solid;
 
@@ -62,6 +63,7 @@ body {
     text-decoration: none;
     font-family: var(--montserrat);
     font-size: 12px;
+    font-weight: 400;
 }
 
 .cabecalho__lista-link:hover {

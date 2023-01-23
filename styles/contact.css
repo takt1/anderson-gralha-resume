@@ -4,6 +4,8 @@ body {
 
 .contato {
     display: flex;
+    flex-direction: column;
+
     overflow: hidden; 
 }
 
@@ -19,17 +21,109 @@ body {
     right: 0;
 }
 
-.contato__lista-ancora {
-    z-index: 3;
+.contato__titulo {
+    font-size: 36px;
+    font-family: var(--montserrat);
+    font-weight: 700;
+    color: var(--ciano);
+    text-align: center;
 
-    margin: 7em auto;
+    margin: 5rem 0 3rem 0;
+}
+
+.contato__form {
+    width: 70vw;
+    max-width: 36rem;
+
+    margin-left: 3rem;
+}
+
+.contato span {
+    color: var(--azul-claro);
+    font-weight: 700;
+    text-align: center;
+    
+    margin: 2em 0;
+}
+
+.contato__form-nome {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+
+    margin-bottom: .5rem;
+
+    display: block;
+}
+
+.contato__form-informacao {
+    margin-bottom: 3rem;
+
+    font-family: var(--inter);
+    font-size: 16px;
+
+    padding: .5rem;
+
+    width: 100%;
+    max-width: 500px;
+
+    border-radius: 5px;
+    border: 1px solid transparent;
+
+    transition: 0.2s;
+}
+
+.contato__form-mensagem {
+    resize: vertical;
+
+    min-height: 12rem
+}
+
+.contato__form-informacao:focus {
+    outline: none;
+
+    border-color: var(--azul-claro);
+    
+    box-shadow: 0 0 0 3px var(--ciano);
+}
+
+.contato__form-botao {
+    padding: 1rem 2rem;
+    width: 7rem;
+
+    background-color: var(--ciano);
+
+    font-size: 20px;
+    font-weight: 500;
+
+    text-align: center;
+
+    transition: 0.2s;
+
+    border-radius: 5px;
+    border: none;
+}
+
+.contato__form-botao:hover {
+    background-color: var(--azul-claro); 
+
+    box-shadow: 0 0 0 3px var(--azul-claro);
+
+    font-weight: 600;
+}
+
+.contato__form-botao:active {
+    background-color: #3498DB;
+
+    box-shadow: 0 0 0 3px #3498DB;
 }
 
 .contato__ancora {
     display: flex;
     align-items: center;
+    justify-content: center;
 
-    margin: 2em 0;
+    margin: 1em 0 4em 0;
 }
 
 .contato__ancora-texto {
@@ -46,11 +140,36 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+    .contato__titulo {
+        font-size: 48px;
+    }
+
+    .contato__form {
+        margin-left: 6rem;
+    }
+
+    .contato span {
+        font-size: 18px;
+    }
+
+    .contato__form-nome {
+        font-size: 20px;
+    }
+
+    .contato__form-botao {
+        width: 30vw;
+
+        padding: 1.5rem 2rem;
+
+        font-size: 20px;
+    }
+    
     .contato__ancora-logo {
         width: 50px;
     }
 
     .contato__ancora-texto {
         font-size: 32px;
+        font-weight: 600;
     }
 }
