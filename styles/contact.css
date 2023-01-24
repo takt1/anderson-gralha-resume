@@ -4,6 +4,8 @@ body {
 
 .contato {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 
     overflow: hidden; 
@@ -32,10 +34,10 @@ body {
 }
 
 .contato__form {
-    width: 70vw;
-    max-width: 36rem;
+    margin: 0 1rem;
 
-    margin-left: 3rem;
+    width: 80vw;
+    max-width: 600px;
 }
 
 .contato span {
@@ -46,78 +48,74 @@ body {
     margin: 7em 0 2em 0;
 }
 
+.contato__form-item {
+    display: block;
+    width: 100%;
+
+    font: inherit;
+}
+
 .contato__form-nome {
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 
     margin-bottom: .5rem;
-
-    display: block;
 }
 
 .contato__form-informacao {
-    margin-bottom: 3rem;
+    padding: 1rem;
 
-    font-family: var(--inter);
-    font-size: 16px;
-
-    padding: .5rem;
-
-    width: 100%;
-    max-width: 500px;
+    margin-bottom: 2rem;
 
     border-radius: 5px;
-    border: 1px solid transparent;
-
+    border: none;
+    
     transition: 0.2s;
-}
-
-.contato__form-mensagem {
-    resize: vertical;
-
-    min-height: 12rem
+    
+    box-sizing: border-box;
 }
 
 .contato__form-informacao:focus {
     outline: none;
 
-    border-color: var(--azul-claro);
-    
-    box-shadow: 0 0 0 3px var(--ciano);
+    border: 3px solid var(--ciano);
+}
+
+.contato__form-mensagem {
+    resize: vertical;
+
+    min-height: 12rem;
 }
 
 .contato__form-botao {
-    padding: 1rem 2rem;
-    width: 7rem;
-
-    background-color: var(--ciano);
-
-    font-size: 20px;
+    color: var(--ciano);
+    font-size: 18px;
     font-weight: 500;
 
-    text-align: center;
+    padding: 1rem;
+
+    background-color: transparent;
+
+    border: 2px solid var(--ciano);
+    border-radius: 5px;
 
     transition: 0.2s;
-
-    border-radius: 5px;
-    border: none;
 
     cursor: pointer;
 }
 
 .contato__form-botao:hover {
-    background-color: var(--azul-claro); 
+    background-color: var(--ciano);
 
-    box-shadow: 0 0 0 3px var(--azul-claro);
-
+    color: black;
     font-weight: 600;
 }
 
 .contato__form-botao:active {
-    background-color: #3498DB;
+    background-color: var(--azul-claro);
 
-    box-shadow: 0 0 0 3px #3498DB;
+    border-color: var(--azul-claro);
 }
 
 .contato__ancora {
@@ -146,24 +144,20 @@ body {
         font-size: 48px;
     }
 
-    .contato__form {
-        margin-left: 6rem;
-    }
-
     .contato span {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .contato__form-nome {
-        font-size: 20px;
+        font-size: 24px;
+    }
+
+    .contato__form-informacao {
+        font-size: 18px;
     }
 
     .contato__form-botao {
-        width: 30vw;
-
-        padding: 1.5rem 2rem;
-
-        font-size: 20px;
+        font-size: 24px;
     }
     
     .contato__ancora-logo {
